@@ -22,6 +22,10 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin','middleware' => 'auth'
     Route::post('news/create', 'NewsController@create');
     Route::post('profile/create', 'ProfileController@create');
     Route::post('profile/edit', 'ProfileController@update');
+    Route::get('news', 'NewsController@index');
+    Route::get('news/edit', 'NewsController@edit');
+    Route::post('news/edit', 'NewsController@update');
+    Route::get('news/delete', 'NewsController@delete');
 });
 
 Auth::routes();
