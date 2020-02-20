@@ -30,11 +30,9 @@ aria-expanded="false" aria-label="Toggle navigation">
                         <ul class="navbar-nav mr-auto">
                             
                         </ul>
-                        <ul class="navbar-nav mr-auto">
-                            
-                         @guest
+                        <ul class="navbar-nav ml-auto">
+                        @guest
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                    
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" 
@@ -53,7 +51,7 @@ aria-expanded="false" aria-label="Toggle navigation">
                                     </form>
                                 </div>
                             </li>
-                            @endguest
+                        @endguest
                         </ul>
                     </div>
                 </div>

@@ -29,6 +29,9 @@ aria-expanded="false" aria-label="Toggle navigation">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            
                         @guest
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                             
@@ -52,9 +55,7 @@ aria-expanded="false" aria-label="Toggle navigation">
                             </li>
                             @endguest
                         </ul>
-                        <ul class="navbar-nav mr-auto">
-                            
-                        </ul>
+                        
                     </div>
                 </div>
             </nav>
