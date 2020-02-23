@@ -42,7 +42,7 @@
                         <label class="col-md-2" for="introduction">自己紹介</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="introduction" rows="10">
-                                {{ old('introduction') }}
+                                {{ $profile_form->introduction }}
                             </textarea>
                         </div>
                     </div>

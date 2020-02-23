@@ -10,7 +10,7 @@
         <link rel="dns-prefrtch" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ secure_asset('css/admin.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/front.css') }}" rel="stylesheet">
     </head> 
     <body>
         <div id="app">
@@ -24,7 +24,6 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                         </ul>
@@ -43,6 +42,7 @@
                                             document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
+
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
