@@ -15,6 +15,7 @@
                     @endif
 
                     You are logged in!
+                    <p>課題の為、一文追加</p>
                 </div>
             </div>
         </div>
